@@ -43,5 +43,11 @@ public class jdbc_utility {
         connect.close();
         statement.close();
     }
+    public static void close_connection(Connection connect ,PreparedStatement statement,ResultSet rs) throws SQLException
+    {
+        connect.close();
+        statement.close();
+        rs.close();
+    }
 
 }
